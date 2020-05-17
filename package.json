@@ -1,0 +1,27 @@
+{
+  "name": "code-recess-mean",
+  "version": "0.1.0",
+  "description": "Code Recess",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "express"
+  ],
+  "author": "Alessio Michelini",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "config": "^3.3.1",
+    "connect-mongo": "^3.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "file-stream-rotator": "^0.5.7",
+    "mongoose": "^5.9.14",
+    "morgan": "^1.10.0"
+  }
+}
