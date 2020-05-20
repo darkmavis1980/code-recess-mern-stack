@@ -17,7 +17,22 @@ let PostSchema = new Schema({
   author: {
     type: Schema.Types.ObjectId,
     ref: 'Author'
-  }
+  },
+  status: {
+    type: String,
+    enum: ['draft', 'published'],
+    default: 'draft'
+  },
+  comments: [
+    {
+      nickname: String,
+      comment: String,
+      date: {
+        type: Date,
+        default: Date.now
+      },
+    }
+  ]
 });
 
 module.exports = mongoose.model("Post", PostSchema);

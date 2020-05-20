@@ -33,5 +33,6 @@ module.exports = (app, express) => {
       .status(200)
       .json(data);
   });
+
   return routes;
 }
